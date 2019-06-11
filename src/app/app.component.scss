@@ -1,0 +1,58 @@
+::ng-deep ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::ng-deep ::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f5f5f5;
+}
+
+::ng-deep ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: #44515970;
+}
+::ng-deep ::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+  background-color: #445159;
+}
+
+::ng-deep .mat-drawer-inner-container {
+  overflow-x: hidden !important;
+}
+
+.menu-open {
+  //   border: 1px solid green;
+  transition: 0.5s ease;
+}
+.menu-close {
+  //   border: 1px solid green;
+  transition: 0.5s ease;
+}
+.isOpen {
+  //   border: 1px solid green;
+  transition: 0.5s ease;
+}
+.isClose {
+  //   border: 1px solid green;
+  transition: 0.5s ease;
+}
+
+::ng-deep .menu-close {
+  .side-nav-menu {
+    // border: 1px solid red;
+    app-menu-list-item {
+      .submenu {
+        app-menu-list-item {
+          margin: 0px !important;
+          .mat-list-item.expanded {
+            padding: 0px !important;
+          }
+        }
+      }
+    }
+  }
+}

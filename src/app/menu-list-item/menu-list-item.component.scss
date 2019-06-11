@@ -1,0 +1,76 @@
+@import "../theme";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  // width: 100%;
+  margin: 5px 10px;
+
+  .mat-list-item.active {
+    background-color: #3b7aa3;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 4px;
+  }
+  &:hover,
+  &:focus {
+    > .mat-list-item:not(.expanded) {
+      background-color: #f58138 !important ;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      border-radius: 4px;
+    }
+  }
+  .mat-list-item,
+  .mat-list-base.mat-list-option {
+    height: 40px !important;
+  }
+}
+
+.mat-list-item {
+  padding: 0px 0;
+  display: flex;
+  width: auto;
+  margin-bottom: 5px;
+
+  .routeIcon {
+    // color: #ffffff;
+    // margin-right: 15px;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  ::ng-deep .mat-list-item-content {
+    width: 100% !important;
+  }
+}
+.icon-span {
+  font-weight: 500;
+  // color: #ffffff;
+  position: absolute;
+
+  right: 15px;
+  top: 8px;
+}
+.name-span {
+  // font-weight: 500;
+  // color: #ffffff;
+}
+
+::ng-deep .menu-close {
+  .icon-span {
+    display: none !important;
+    font-weight: 500;
+    // color: #ffffff;
+    position: absolute;
+
+    right: 15px;
+    top: 8px;
+  }
+  .name-span {
+    padding-left: 15px;
+    // font-weight: 500;
+    // color: #ffffff;
+  }
+  .mat-card-header-text {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3  mt-3 " *ngFor="let item of finalResponse">
+                <div class="card ">
+                    <div class="card-body">
+                        <p class="card-title"> {{item[0][1]}} </p>
+                        <p class="count text-capitalize"> {{item[1][0]}} - <span>{{item[1][1]}} </span> </p>
+                        <p class="count text-capitalize"> This {{item[2][0]}} - <span> {{item[2][1]}} </span></p>
+                        <p class="count text-capitalize"> This {{item[3][0]}} - <span> {{item[3][1]}} </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

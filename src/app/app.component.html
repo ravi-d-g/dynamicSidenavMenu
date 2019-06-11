@@ -1,75 +1,32 @@
-<mat-toolbar id="mainToolbar" color="primary">
-  <mat-icon
-    (click)="onToolbarMenuToggle()"
-    id="toolbarMenu">subject</mat-icon>
-  My Awesome App
-  <span class="toolbar-spacer"></span>
-  <mat-icon
-    class="toolbar-icon"
-    matBadge="8"
-    matBadgePosition="after"
-    matBadgeColor="accent"
-  >notifications</mat-icon>
-</mat-toolbar>
-
-<mat-sidenav-container
-  id="sidenavContainer"
- fullscreen>
-  <mat-sidenav
-    mode="side"
-    #sidenav
-    id="sidenav"
-    [class.menu-open]="isMenuOpen"
-    [class.menu-close]="!isMenuOpen"
-    opened>
-    
-    <mat-list id="menus">
-      <mat-card>
+<app-navbar (sideClick)="onToolbarMenuToggle()" (userLogOut)="logout($event)" [mainMenuList]='navbarItems'>
+</app-navbar>
+<mat-sidenav-container id="sidenavContainer" fullscreen>
+  <mat-sidenav mode="side" #sidenav id="sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened>
+    <div>
+      <mat-card class="pb-2 pt-1" style="    box-shadow: none;
+      border-bottom: 1px solid #e6e6e6;
+      border-radius: 0;">
         <mat-card-header>
-          <div 
-            mat-card-avatar 
-            class="avatar"></div>
-
+          <div mat-card-avatar class="avatar"></div>
           <mat-card-title>John Doe</mat-card-title>
-          <mat-card-subtitle>Internal</mat-card-subtitle>
+          <mat-card-subtitle class="mb-0"> Internal</mat-card-subtitle>
         </mat-card-header>
       </mat-card>
-      <mat-list-item>
-        <button 
-        class="menu-item"
-          mat-flat-button>
-          <mat-icon>dashboard</mat-icon>
-        Dashboard</button>
-      </mat-list-item>
+      <mat-list id="menus" class="pt-0" class="side-nav-menu">
 
-      <mat-list-item>
-          <button 
-          class="menu-item"
-            mat-flat-button>
-            <mat-icon>work</mat-icon>
-          Project</button>
-        </mat-list-item>
-
-        <mat-list-item>
-            <button 
-            class="menu-item"
-              mat-flat-button>
-              <mat-icon>settings_application</mat-icon>
-            Settings</button>
-          </mat-list-item>
-
-    </mat-list>
+        <mat-nav-list>
+          <app-menu-list-item class="bottomBorder" *ngFor="let item of navItems | slice:0:20;" [item]="item"
+            (clickCloseMenu)="onToolbarMenuToggle()" [closeAllSubMenu]="closeMenu"
+            (clickOpenMenu)="onToolbarMenuOpen()"></app-menu-list-item>
+        </mat-nav-list>
+      </mat-list>
+    </div>
   </mat-sidenav>
+  <mat-sidenav-content [ngStyle]="{ 'margin-left.px': contentMargin }"
+    [ngClass]="{'isOpen':isMenuOpen, 'isClose':!isMenuOpen} ">
 
-  <mat-sidenav-content
-  [ngStyle]="{ 'margin-left.px': contentMargin }"
-  >
-    <mat-selection-list class="dash-list">
-      <h3>TO DO</h3>
-      <mat-list-option *ngFor="let todo of task">
-        {{todo}}
-      </mat-list-option>
-    </mat-selection-list> 
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
-<router-outlet></router-outlet>
