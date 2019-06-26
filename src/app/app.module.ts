@@ -4,24 +4,31 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material-module';
-import { MenuListItemComponent } from './menu-list-item/menu-list-item.component';
-import { HttpClientModule } from '@angular/common/http';
-import { NavbarComponent } from './navbar/navbar.component';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+ import { HttpClientModule } from '@angular/common/http';
+ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ScrollDispatchModule } from '@angular/cdk/scrolling';
+import { AddPostComponent } from './add-post/add-post.component';
+import { MatDialogModule } from '@angular/material';
 @NgModule({
+  entryComponents:[AddPostComponent],
+
   declarations: [
     AppComponent,
-    MenuListItemComponent,
-    NavbarComponent
+      AddPostComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
     HttpClientModule,
+    ScrollDispatchModule,
+    MatDialogModule,
     MDBBootstrapModule.forRoot()
 
   ],

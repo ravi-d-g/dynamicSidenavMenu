@@ -1,0 +1,513 @@
+
+
+Wed Jun 26 18:30:50 2019
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 5.0.0-19-generic (#20-Ubuntu SMP Wed Jun 19 17:04:04 UTC 2019) x86_64
+Compiler: GCC 8.2
+ext2fs lib: 1.44.6, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       976773168 sectors
+/dev/sda: user_max   976773168 sectors
+/dev/sda: native_max 976773168 sectors
+/dev/sda: dco        976773168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63, sector size=512 - ST500DM002-1BD142, S/N:W3TLMMYE, FW:KC48
+
+Partition table type (auto): Intel
+Disk /dev/sda - 500 GB / 465 GiB - ST500DM002-1BD142
+Partition table type: Intel
+
+Interface Advanced
+Geometry from i386 MBR: head=255 sector=63
+ 1 * Linux                    0  32 33 60801  47 46  976769024
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 500 GB / 465 GiB
+search_superblock
+
+recover_EXT2: s_block_group_nr=0/3726, s_mnt_count=19/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 2 (block=0, blocksize=4096)
+
+block_group_nr 1
+
+recover_EXT2: "e2fsck -b 32768 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=1/3726, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 262144 (block=32768, blocksize=4096)
+
+block_group_nr 3
+
+recover_EXT2: "e2fsck -b 98304 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=3/3726, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 786432 (block=98304, blocksize=4096)
+
+block_group_nr 5
+
+recover_EXT2: "e2fsck -b 163840 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=5/3726, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 1310720 (block=163840, blocksize=4096)
+
+block_group_nr 7
+
+recover_EXT2: "e2fsck -b 229376 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=7/3726, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 1835008 (block=229376, blocksize=4096)
+
+block_group_nr 9
+
+recover_EXT2: "e2fsck -b 294912 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=9/3726, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 2359296 (block=294912, blocksize=4096)
+
+block_group_nr 25
+
+recover_EXT2: "e2fsck -b 819200 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=25/3726, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 6553600 (block=819200, blocksize=4096)
+
+block_group_nr 27
+
+recover_EXT2: "e2fsck -b 884736 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=27/3726, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 7077888 (block=884736, blocksize=4096)
+
+block_group_nr 49
+
+recover_EXT2: "e2fsck -b 1605632 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=49/3726, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 12845056 (block=1605632, blocksize=4096)
+
+block_group_nr 81
+
+recover_EXT2: "e2fsck -b 2654208 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=81/3726, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 122096128
+recover_EXT2: part_size 976769024
+Ext2 superblock found at sector 21233664 (block=2654208, blocksize=4096)
+  Linux                    0  32 33 60801  47 46  976769024
+superblock 0, blocksize=4096 []
+superblock 32768, blocksize=4096 []
+superblock 98304, blocksize=4096 []
+superblock 163840, blocksize=4096 []
+superblock 229376, blocksize=4096 []
+superblock 294912, blocksize=4096 []
+superblock 819200, blocksize=4096 []
+superblock 884736, blocksize=4096 []
+superblock 1605632, blocksize=4096 []
+superblock 2654208, blocksize=4096 []
+
+To repair the filesystem using alternate superblock, run
+fsck.ext4 -p -b superblock -B blocksize device
+
+
+dir_partition inode=2
+ 1 * Linux                    0  32 33 60801  47 46  976769024
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 500 GB / 465 GiB
+Directory /
+       2 drwxr-xr-x     0      0      4096 26-Jun-2019 06:50 .
+       2 drwxr-xr-x     0      0      4096 26-Jun-2019 06:50 ..
+      11 drwx------     0      0     16384 17-Jan-2019 11:02 lost+found
+      12 -rw-------     0      0 2147483648 17-Jan-2019 11:02 swapfile
+ 11010049 drwxr-xr-x     0      0     12288 26-Jun-2019 06:52 etc
+ 9437185 drwxr-xr-x     0      0      4096 17-Jan-2019 12:13 media
+ 17039361 drwxr-xr-x     0      0      4096 25-Jul-2018 08:44 var
+ 16908289 drwxr-xr-x     0      0      4096 12-Jun-2019 15:23 bin
+ 25427969 drwxr-xr-x     0      0      4096 26-Jun-2019 06:51 boot
+ 6029313 drwxr-xr-x     0      0      4096 25-Jul-2018 08:33 dev
+ 25165825 drwxr-xr-x     0      0      4096 17-Jan-2019 11:04 home
+ 17694721 drwxr-xr-x     0      0      4096 14-May-2019 12:30 lib
+ 12582913 drwxr-xr-x     0      0      4096 14-May-2019 11:55 lib64
+ 10092545 drwxr-xr-x     0      0      4096 25-Jul-2018 08:33 mnt
+ 6160385 drwxr-xr-x     0      0      4096 25-Jun-2019 15:20 opt
+ 8257537 drwxr-xr-x     0      0      4096 24-Apr-2018 14:04 proc
+ 4456449 drwx------     0      0      4096 10-Jun-2019 16:00 root
+ 27394049 drwxr-xr-x     0      0      4096 25-Jul-2018 08:42 run
+ 22282241 drwxr-xr-x     0      0     12288 18-Jun-2019 18:14 sbin
+ 1835009 drwxr-xr-x     0      0      4096 14-May-2019 13:45 snap
+ 13238273 drwxr-xr-x     0      0      4096 25-Jul-2018 08:33 srv
+ 9043969 drwxr-xr-x     0      0      4096 24-Apr-2018 14:04 sys
+ 28573697 drwxrwxrwt     0      0     12288 26-Jun-2019 18:32 tmp
+ 14548993 drwxr-xr-x     0      0      4096 11-May-2019 17:05 usr
+      14 lrwxrwxrwx     0      0        29 26-Jun-2019 06:50 vmlinuz
+      16 lrwxrwxrwx     0      0        32 26-Jun-2019 06:50 initrd.img.old
+      17 lrwxrwxrwx     0      0        32 26-Jun-2019 06:50 initrd.img
+  262145 drwxrwxr-x     0      0      4096 17-Jan-2019 11:04 cdrom
+X     17 lrwxrwxrwx     0      0        32 26-Jun-2019 06:50 initrd.img.512610
+      18 lrwxrwxrwx     0      0        29 26-Jun-2019 06:50 vmlinuz.old
+X     16 lrwxrwxrwx     0      0        32 26-Jun-2019 06:50 initrd.img.old.672595
+
+dir_partition inode=25165825
+ 1 * Linux                    0  32 33 60801  47 46  976769024
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 500 GB / 465 GiB
+Directory /home
+ 25165825 drwxr-xr-x     0      0      4096 17-Jan-2019 11:04 .
+       2 drwxr-xr-x     0      0      4096 26-Jun-2019 06:50 ..
+ 25165826 drwxr-xr-x  1000   1000      4096 26-Jun-2019 17:43 melayer
+
+dir_partition inode=25165826
+ 1 * Linux                    0  32 33 60801  47 46  976769024
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 500 GB / 465 GiB
+Directory /home/melayer
+ 25165826 drwxr-xr-x  1000   1000      4096 26-Jun-2019 17:43 .
+ 25165825 drwxr-xr-x     0      0      4096 17-Jan-2019 11:04 ..
+ 25165827 -rw-r--r--  1000   1000       807 17-Jan-2019 11:04 .profile
+ 25165828 -rw-r--r--  1000   1000      8980 17-Jan-2019 11:04 examples.desktop
+ 25165829 -rw-r--r--  1000   1000       220 17-Jan-2019 11:04 .bash_logout
+ 25175667 -rw-r--r--  1000   1000      3970 14-May-2019 14:22 .bashrc
+ 25165831 drwx------  1000   1000      4096 17-Jan-2019 11:55 .gnupg
+ 25165833 drwx------  1000   1000      4096 25-Jun-2019 16:16 .cache
+ 25165834 drwx------  1000   1000      4096 17-Jan-2019 11:18 .local
+ 25165842 drwx------  1000   1000      4096 26-Jun-2019 16:19 .config
+ 25165891 drwxr-xr-x  1000   1000      4096 22-Jun-2019 16:38 Desktop
+ 25165894 drwxr-xr-x  1000   1000      4096 17-Jan-2019 11:19 Public
+ 25165839 -rw-------  1000   1000    206688 26-Jun-2019 17:43 .ICEauthority
+ 25165892 drwxr-xr-x  1000   1000      4096 26-Jun-2019 14:33 Downloads
+ 25165893 drwxr-xr-x  1000   1000      4096 17-Jan-2019 11:19 Templates
+ 25165895 drwxr-xr-x  1000   1000      4096 13-May-2019 16:57 Documents
+ 25165896 drwxr-xr-x  1000   1000      4096 17-Jan-2019 11:19 Music
+ 25165897 drwxr-xr-x  1000   1000      4096 16-Jun-2019 12:55 Pictures
+ 25165898 drwxr-xr-x  1000   1000      4096 10-Jun-2019 16:02 Videos
+ 25165948 drwx------  1000   1000      4096 17-Jan-2019 11:20 .mozilla
+ 25166072 -rw-r--r--  1000   1000         0 17-Jan-2019 11:20 .sudo_as_admin_successful
+ 25183532 -rw-------  1000   1000     37765 26-Jun-2019 16:59 .bash_history
+ 26083492 drwxr-xr-x  1000   1000      4096 15-Apr-2019 15:10 test
+ 25168179 drwxr-xr-x  1000   1000      4096 18-Jan-2019 11:11 Workspace
+ 25168736 drwx------  1000   1000      4096 17-Jan-2019 11:52 .pki
+ 25168782 drwx------  1000   1000      4096 17-Jan-2019 11:52 .gnome
+ 25169154 drwx------  1000   1000      4096  8-Mar-2019 11:40 .ssh
+ 25169157 drwx------  1000   1000      4096 27-Apr-2019 15:27 .gconf
+ 25301619 drwxrwxr-x  1000   1000      4096 13-May-2019 16:51 .vscode
+ 25169964 -rw-r--r--  1000   1000     12540 17-Jan-2019 12:02 install_nvm.sh
+ 25170200 drwxr-xr-x  1000   1000      4096 17-Jan-2019 12:04 .nvm
+ 25428405 drwxr-xr-x  1000   1000      4096 25-Feb-2019 17:54 .npm
+ 25173144 -rw-------  1000   1000         0 17-Jan-2019 14:27 .mongorc.js
+ 25173632 -rw-------  1000   1000        81 27-Apr-2019 19:15 .dbshell
+ 26090539 drwxr-xr-x  1000   1000      4096  2-Apr-2019 14:35 .node-gyp
+ 25188149 -rw-rw-r--  1000   1000        60  3-Apr-2019 13:07 .gitconfig
+ 26348161 drwxr-xr-x  1000   1000      4096 11-May-2019 18:44 snap
+ 25301035 drwxr-xr-x  1000   1000      4096 21-Jun-2019 12:13 workspace_jar
+ 27407910 drwxrwxrwx  1000   1000      4096 10-Jun-2019 16:03 .anydesk
+ 26084648 drwxr-xr-x  1000   1000      4096 14-Mar-2019 18:33 .gphoto
+ 26085362 drwxr-xr-x  1000   1000      4096 19-Mar-2019 11:30 first-app
+ 26878799 drwxrwxr-x  1000   1000      4096 19-Mar-2019 13:11 DMS_1
+ 26084086 drwxr-xr-x  1000   1000      4096 15-Apr-2019 15:30 swagger-doc
+ 25302229 drwx------  1000   1000      4096 25-Jan-2019 10:23 .thunderbird
+ 25203718 -rw-------  1000   1000        70 25-Jan-2019 16:09 .npmrc
+ 27930577 drwxrwxr-x  1000   1000      4096 12-Jun-2019 15:23 .Genymobile
+ 25204172 -rw-rw-r--  1000   1000       172 25-Jun-2019 15:18 .wget-hsts
+ 26216027 drwxr-xr-x  1000   1000      4096 26-Jun-2019 16:23 my-workspace
+ 26745331 drwxr-xr-x  1000   1000      4096 15-Apr-2019 15:37 swagger-docs-tutorial
+ 25196752 -rw-r--r--  1000   1000     11544  4-Mar-2019 13:00 nodesource_setup.sh
+ 26089896 drwxr-xr-x  1000   1000      4096  4-Mar-2019 13:05 .pm2
+ 27671493 drwxr-xr-x  1000   1000      4096 15-Apr-2019 15:39 rest-swagger-example
+ 25172701 -rw-rw-r--  1000   1000      4397 15-Apr-2019 15:40 .v8flags.6.8.275.32-node.45.ba47bf2e70b581a72701f47c5957e233.json
+ 25172895 -rw-rw-r--  1000   1000   1062000 15-Apr-2019 17:40 .babel.json
+ 27270315 drwxr-xr-x  1000   1000      4096 10-May-2019 18:32 TEST
+ 25175863 -rw-------  1000   1000         0  6-May-2019 16:18 .node_repl_history
+ 26214574 drwxrwxr-x  1000   1000      4096  7-May-2019 11:22 .azuredatastudio
+ 26478530 drwxrwxr-x  1000   1000      4096  7-May-2019 11:22 .sqlsecrets
+ 25300185 drwx------     0      0      4096 11-May-2019 16:23 .dbus
+ 25173883 -rw-rw-r--  1000   1000       131 14-May-2019 19:10 .xinputrc
+ 25178838 -rw-rw-r--  1000   1000   1971829  1-Jun-2019 19:01 ritwickdey.LiveServer-unresponsive.cpuprofile.txt
+ 25303982 drwxr-xr-x  1000   1000      4096 10-Jun-2019 13:01 node-rest-shop
+ 25172406 -rw-------  1000   1000    503373 26-Jun-2019 17:43 .xsession-errors
+ 25198699 -rw-r--r--  1000   1000   3658570  9-Nov-2018 21:59 anydesk_4.0.1-1_amd64.deb
+ 25174891 -rw-------  1000   1000        58 26-Jun-2019 17:42 .Xauthority
+ 25195255 -rw-r--r--  1000   1000   3658570  9-Nov-2018 21:59 anydesk_4.0.1-1_amd64.deb.1
+ 25183384 -rw-r--r--  1000   1000  13489636  6-Jun-2019 13:20 teamviewer_amd64.deb
+ 25183354 -rwxr-----  1000   1000     13337 26-Jun-2019 16:12 AngularTest.docx
+ 25183461 -rw-r--r--  1000   1000        82 26-Jun-2019 16:15 .~lock.AngularTest.docx#
+ 25306934 drwxr-xr-x  1000   1000      4096 26-Jun-2019 16:16 testA
+X25170192 -rw-------  1000   1000     29650 26-Jun-2019 18:02 .ICEauthority-c
+X25170192 -rw-------  1000   1000     29650 26-Jun-2019 18:02 .ICEauthority-l
+X25174891 -rw-------  1000   1000        58 26-Jun-2019 17:42 .Xauthority-n
+
+dir_partition inode=26216027
+ 1 * Linux                    0  32 33 60801  47 46  976769024
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 500 GB / 465 GiB
+Directory /home/melayer/my-workspace
+ 26216027 drwxr-xr-x  1000   1000      4096 26-Jun-2019 16:23 .
+ 25165826 drwxr-xr-x  1000   1000      4096 26-Jun-2019 17:43 ..
+ 26745286 drwxr-xr-x  1000   1000      4096 13-Apr-2019 11:51 createNodeFolder
+ 27801826 drwxr-xr-x  1000   1000      4096  6-Jun-2019 11:24 test
+ 26227590 drwxr-xr-x  1000   1000      4096 16-Apr-2019 17:21 movie-collection
+ 26880624 drwxr-xr-x  1000   1000      4096 27-May-2019 11:46 testTemp
+ 27671285 drwxr-xr-x  1000   1000      4096 26-Apr-2019 14:49 notes-server
+ 26227580 drwxr-xr-x  1000   1000      4096 27-Apr-2019 11:49 NodeJSMosh
+ 26351223 drwxr-xr-x  1000   1000      4096 27-Apr-2019 19:13 MSG_LOGIN
+ 28972520 drwxr-xr-x  1000   1000      4096 16-Apr-2019 12:05 Personal
+ 28972521 drwxr-xr-x  1000   1000      4096 14-Mar-2019 11:47 HTML
+ 27007040 drwxr-xr-x  1000   1000      4096  6-Jun-2019 14:58 userLoginTimer
+ 29500070 drwxr-xr-x  1000   1000      4096  3-Jun-2019 14:41 JavaScript
+ 26744778 drwxr-xr-x  1000   1000      4096  6-Jun-2019 15:54 pipes
+ 27407811 drwxr-xr-x  1000   1000      4096 26-Jun-2019 18:30 AngularMaterialGettingStarted
+ 26881047 drwxr-xr-x  1000   1000      4096 10-Jun-2019 12:06 ng7FileUpload
+ 26214438 -rw-r--r--  1000   1000  85362401 26-Jun-2019 16:25 AngularMaterialGettingStarted.zip
+ 26214403 drwxr-xr-x  1000   1000      4096 17-Apr-2019 15:06 NodeJS
+X26226102 drwxr-xr-x  1000   1000      4096  9-Mar-2019 14:31 Raviraj
+X26227337 drwxr-xr-x  1000   1000      4096 12-Mar-2019 13:47 myFlipcart
+ 26214405 drwxr-xr-x  1000   1000      4096 14-Mar-2019 11:47 Angular
+X26215101 -rw-rw-r--  1000   1000         0 11-Jun-2019 11:06 window-controller.test.d.ts
+
+dir_partition inode=27407811
+ 1 * Linux                    0  32 33 60801  47 46  976769024
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 500 GB / 465 GiB
+Directory /home/melayer/my-workspace/AngularMaterialGettingStarted
+ 27407811 drwxr-xr-x  1000   1000      4096 26-Jun-2019 18:30 .
+ 26216027 drwxr-xr-x  1000   1000      4096 26-Jun-2019 16:23 ..
+ 27407820 drwxr-xr-x  1000   1000      4096 11-Jun-2019 14:34 .git
+ 27407841 -rw-r--r--  1000   1000       246  8-Jun-2019 18:58 .editorconfig
+ 27407842 -rw-r--r--  1000   1000       576  8-Jun-2019 18:58 .gitignore
+ 27407843 -rw-r--r--  1000   1000      1560 11-Jun-2019 14:30 README.md
+ 27407844 -rw-r--r--  1000   1000      4401 11-Jun-2019 12:12 angular.json
+ 6704395 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 e2e
+ 27407929 -rw-r--r--  1000   1000    390438 11-Jun-2019 11:58 package-lock.json
+ 27407930 -rw-r--r--  1000   1000      1516 11-Jun-2019 11:58 package.json
+ 6830332 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 src
+ 27407847 -rw-r--r--  1000   1000       435  8-Jun-2019 18:58 tsconfig.json
+ 27407848 -rw-r--r--  1000   1000      2824  8-Jun-2019 18:58 tslint.json
+ 7096415 drwxrwxr-x  1000   1000     32768 11-Jun-2019 14:38 node_modules
+ 27408194 -rw-rw-r--  1000   1000      8192 26-Jun-2019 18:33 testdisk.log
+
+dir_partition inode=6830332
+ 1 * Linux                    0  32 33 60801  47 46  976769024
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 500 GB / 465 GiB
+Directory /home/melayer/my-workspace/AngularMaterialGettingStarted/src
+ 6830332 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 .
+ 27407811 drwxr-xr-x  1000   1000      4096 26-Jun-2019 18:30 ..
+ 6830548 drwxr-xr-x  1000   1000      4096 26-Jun-2019 18:15 app
+ 6830573 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 assets
+ 6830575 -rw-r--r--  1000   1000       388  8-Jun-2019 18:58 browserslist
+ 6972374 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 environments
+ 6830576 -rw-r--r--  1000   1000      5430  8-Jun-2019 18:58 favicon.ico
+ 6830577 -rw-r--r--  1000   1000       609 11-Jun-2019 12:14 index.html
+ 6830578 -rw-r--r--  1000   1000       980  8-Jun-2019 18:58 karma.conf.js
+ 6830579 -rw-r--r--  1000   1000       372  8-Jun-2019 18:58 main.ts
+ 6830580 -rw-r--r--  1000   1000      3571  8-Jun-2019 18:58 polyfills.ts
+ 6830581 -rw-r--r--  1000   1000       908 11-Jun-2019 12:50 styles.scss
+ 6830582 -rw-r--r--  1000   1000       642  8-Jun-2019 18:58 test.ts
+ 6830583 -rw-r--r--  1000   1000       166  8-Jun-2019 18:58 tsconfig.app.json
+ 6830584 -rw-r--r--  1000   1000       256  8-Jun-2019 18:58 tsconfig.spec.json
+ 6830585 -rw-r--r--  1000   1000       314  8-Jun-2019 18:58 tslint.json
+
+dir_partition inode=6830548
+ 1 * Linux                    0  32 33 60801  47 46  976769024
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 500 GB / 465 GiB
+Directory /home/melayer/my-workspace/AngularMaterialGettingStarted/src/app
+ 6830548 drwxr-xr-x  1000   1000      4096 26-Jun-2019 18:15 .
+ 6830332 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 ..
+ 6830551 -rw-r--r--  1000   1000       246 26-Jun-2019 16:28 app-routing.module.ts
+ 6830567 -rw-r--r--  1000   1000      1355 26-Jun-2019 18:17 app.component.html
+ 6830568 -rw-r--r--  1000   1000      1339 26-Jun-2019 18:06 app.component.scss
+ 6830569 -rw-r--r--  1000   1000      1164  8-Jun-2019 18:58 app.component.spec.ts
+ 6830570 -rw-r--r--  1000   1000      1179 26-Jun-2019 17:53 app.component.ts
+ 6830571 -rw-r--r--  1000   1000      1279 26-Jun-2019 18:18 app.module.ts
+ 6830572 -rw-r--r--  1000   1000       662  8-Jun-2019 18:58 material-module.ts
+X6830792 drwxrwxr-x  1000   1000      4096 26-Jun-2019 17:13 add-post
+ 6830670 -rw-rw-r--  1000   1000       766 26-Jun-2019 17:05 app.service.ts
+ 6830678 -rw-rw-r--  1000   1000       318 10-Jun-2019 18:16 app.service.spec.ts
+ 6830707 -rw-rw-r--  1000   1000     10814 10-Jun-2019 18:17 urlConst.ts
+X6830708 -rw-rw-r--  1000   1000       544 10-Jun-2019 18:17 _theme.scss
+X6830777 -rw-rw-r--  1000   1000       702 10-Jun-2019 18:17 _breakpoints.scss
+X9196380 drwxr-xr-x  1000   1000      4096 11-Jun-2019 11:53 navbar
+X9196385 drwxr-xr-x  1000   1000      4096 11-Jun-2019 12:57 dashboard
+X6830789 -rw-rw-r--  1000   1000       233 17-Jun-2019 12:37 temp-test.directive.spec.ts
+X6830790 -rw-rw-r--  1000   1000       225 17-Jun-2019 12:39 temp-test.directive.ts
+Directory /home/melayer/my-workspace/AngularMaterialGettingStarted/src
+ 6830332 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 .
+ 27407811 drwxr-xr-x  1000   1000      4096 26-Jun-2019 18:30 ..
+ 6830548 drwxr-xr-x  1000   1000      4096 26-Jun-2019 18:15 app
+ 6830573 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 assets
+ 6830575 -rw-r--r--  1000   1000       388  8-Jun-2019 18:58 browserslist
+ 6972374 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 environments
+ 6830576 -rw-r--r--  1000   1000      5430  8-Jun-2019 18:58 favicon.ico
+ 6830577 -rw-r--r--  1000   1000       609 11-Jun-2019 12:14 index.html
+ 6830578 -rw-r--r--  1000   1000       980  8-Jun-2019 18:58 karma.conf.js
+ 6830579 -rw-r--r--  1000   1000       372  8-Jun-2019 18:58 main.ts
+ 6830580 -rw-r--r--  1000   1000      3571  8-Jun-2019 18:58 polyfills.ts
+ 6830581 -rw-r--r--  1000   1000       908 11-Jun-2019 12:50 styles.scss
+ 6830582 -rw-r--r--  1000   1000       642  8-Jun-2019 18:58 test.ts
+ 6830583 -rw-r--r--  1000   1000       166  8-Jun-2019 18:58 tsconfig.app.json
+ 6830584 -rw-r--r--  1000   1000       256  8-Jun-2019 18:58 tsconfig.spec.json
+ 6830585 -rw-r--r--  1000   1000       314  8-Jun-2019 18:58 tslint.json
+Directory /home/melayer/my-workspace/AngularMaterialGettingStarted
+ 27407811 drwxr-xr-x  1000   1000      4096 26-Jun-2019 18:30 .
+ 26216027 drwxr-xr-x  1000   1000      4096 26-Jun-2019 16:23 ..
+ 27407820 drwxr-xr-x  1000   1000      4096 11-Jun-2019 14:34 .git
+ 27407841 -rw-r--r--  1000   1000       246  8-Jun-2019 18:58 .editorconfig
+ 27407842 -rw-r--r--  1000   1000       576  8-Jun-2019 18:58 .gitignore
+ 27407843 -rw-r--r--  1000   1000      1560 11-Jun-2019 14:30 README.md
+ 27407844 -rw-r--r--  1000   1000      4401 11-Jun-2019 12:12 angular.json
+ 6704395 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 e2e
+ 27407929 -rw-r--r--  1000   1000    390438 11-Jun-2019 11:58 package-lock.json
+ 27407930 -rw-r--r--  1000   1000      1516 11-Jun-2019 11:58 package.json
+ 6830332 drwxr-xr-x  1000   1000      4096  8-Jun-2019 18:58 src
+ 27407847 -rw-r--r--  1000   1000       435  8-Jun-2019 18:58 tsconfig.json
+ 27407848 -rw-r--r--  1000   1000      2824  8-Jun-2019 18:58 tslint.json
+ 7096415 drwxrwxr-x  1000   1000     32768 11-Jun-2019 14:38 node_modules
+ 27408194 -rw-rw-r--  1000   1000      8192 26-Jun-2019 18:33 testdisk.log
+Directory /home/melayer/my-workspace
+ 26216027 drwxr-xr-x  1000   1000      4096 26-Jun-2019 16:23 .
+ 25165826 drwxr-xr-x  1000   1000      4096 26-Jun-2019 17:43 ..
+ 26745286 drwxr-xr-x  1000   1000      4096 13-Apr-2019 11:51 createNodeFolder
+ 27801826 drwxr-xr-x  1000   1000      4096  6-Jun-2019 11:24 test
+ 26227590 drwxr-xr-x  1000   1000      4096 16-Apr-2019 17:21 movie-collection
+ 26880624 drwxr-xr-x  1000   1000      4096 27-May-2019 11:46 testTemp
+ 27671285 drwxr-xr-x  1000   1000      4096 26-Apr-2019 14:49 notes-server
+ 26227580 drwxr-xr-x  1000   1000      4096 27-Apr-2019 11:49 NodeJSMosh
+ 26351223 drwxr-xr-x  1000   1000      4096 27-Apr-2019 19:13 MSG_LOGIN
+ 28972520 drwxr-xr-x  1000   1000      4096 16-Apr-2019 12:05 Personal
+ 28972521 drwxr-xr-x  1000   1000      4096 14-Mar-2019 11:47 HTML
+ 27007040 drwxr-xr-x  1000   1000      4096  6-Jun-2019 14:58 userLoginTimer
+ 29500070 drwxr-xr-x  1000   1000      4096  3-Jun-2019 14:41 JavaScript
+ 26744778 drwxr-xr-x  1000   1000      4096  6-Jun-2019 15:54 pipes
+ 27407811 drwxr-xr-x  1000   1000      4096 26-Jun-2019 18:30 AngularMaterialGettingStarted
+ 26881047 drwxr-xr-x  1000   1000      4096 10-Jun-2019 12:06 ng7FileUpload
+ 26214438 -rw-r--r--  1000   1000  85362401 26-Jun-2019 16:25 AngularMaterialGettingStarted.zip
+ 26214403 drwxr-xr-x  1000   1000      4096 17-Apr-2019 15:06 NodeJS
+X26226102 drwxr-xr-x  1000   1000      4096  9-Mar-2019 14:31 Raviraj
+X26227337 drwxr-xr-x  1000   1000      4096 12-Mar-2019 13:47 myFlipcart
+ 26214405 drwxr-xr-x  1000   1000      4096 14-Mar-2019 11:47 Angular
+X26215101 -rw-rw-r--  1000   1000         0 11-Jun-2019 11:06 window-controller.test.d.ts
+Directory /home/melayer
+ 25165826 drwxr-xr-x  1000   1000      4096 26-Jun-2019 17:43 .
+ 25165825 drwxr-xr-x     0      0      4096 17-Jan-2019 11:04 ..
+ 25165827 -rw-r--r--  1000   1000       807 17-Jan-2019 11:04 .profile
+ 25165828 -rw-r--r--  1000   1000      8980 17-Jan-2019 11:04 examples.desktop
+ 25165829 -rw-r--r--  1000   1000       220 17-Jan-2019 11:04 .bash_logout
+ 25175667 -rw-r--r--  1000   1000      3970 14-May-2019 14:22 .bashrc
+ 25165831 drwx------  1000   1000      4096 17-Jan-2019 11:55 .gnupg
+ 25165833 drwx------  1000   1000      4096 25-Jun-2019 16:16 .cache
+ 25165834 drwx------  1000   1000      4096 17-Jan-2019 11:18 .local
+ 25165842 drwx------  1000   1000      4096 26-Jun-2019 16:19 .config
+ 25165891 drwxr-xr-x  1000   1000      4096 22-Jun-2019 16:38 Desktop
+ 25165894 drwxr-xr-x  1000   1000      4096 17-Jan-2019 11:19 Public
+ 25165839 -rw-------  1000   1000    206688 26-Jun-2019 17:43 .ICEauthority
+ 25165892 drwxr-xr-x  1000   1000      4096 26-Jun-2019 14:33 Downloads
+ 25165893 drwxr-xr-x  1000   1000      4096 17-Jan-2019 11:19 Templates
+ 25165895 drwxr-xr-x  1000   1000      4096 13-May-2019 16:57 Documents
+ 25165896 drwxr-xr-x  1000   1000      4096 17-Jan-2019 11:19 Music
+ 25165897 drwxr-xr-x  1000   1000      4096 16-Jun-2019 12:55 Pictures
+ 25165898 drwxr-xr-x  1000   1000      4096 10-Jun-2019 16:02 Videos
+ 25165948 drwx------  1000   1000      4096 17-Jan-2019 11:20 .mozilla
+ 25166072 -rw-r--r--  1000   1000         0 17-Jan-2019 11:20 .sudo_as_admin_successful
+ 25183532 -rw-------  1000   1000     37765 26-Jun-2019 16:59 .bash_history
+ 26083492 drwxr-xr-x  1000   1000      4096 15-Apr-2019 15:10 test
+ 25168179 drwxr-xr-x  1000   1000      4096 18-Jan-2019 11:11 Workspace
+ 25168736 drwx------  1000   1000      4096 17-Jan-2019 11:52 .pki
+ 25168782 drwx------  1000   1000      4096 17-Jan-2019 11:52 .gnome
+ 25169154 drwx------  1000   1000      4096  8-Mar-2019 11:40 .ssh
+ 25169157 drwx------  1000   1000      4096 27-Apr-2019 15:27 .gconf
+ 25301619 drwxrwxr-x  1000   1000      4096 13-May-2019 16:51 .vscode
+ 25169964 -rw-r--r--  1000   1000     12540 17-Jan-2019 12:02 install_nvm.sh
+ 25170200 drwxr-xr-x  1000   1000      4096 17-Jan-2019 12:04 .nvm
+ 25428405 drwxr-xr-x  1000   1000      4096 25-Feb-2019 17:54 .npm
+ 25173144 -rw-------  1000   1000         0 17-Jan-2019 14:27 .mongorc.js
+ 25173632 -rw-------  1000   1000        81 27-Apr-2019 19:15 .dbshell
+ 26090539 drwxr-xr-x  1000   1000      4096  2-Apr-2019 14:35 .node-gyp
+ 25188149 -rw-rw-r--  1000   1000        60  3-Apr-2019 13:07 .gitconfig
+ 26348161 drwxr-xr-x  1000   1000      4096 11-May-2019 18:44 snap
+ 25301035 drwxr-xr-x  1000   1000      4096 21-Jun-2019 12:13 workspace_jar
+ 27407910 drwxrwxrwx  1000   1000      4096 10-Jun-2019 16:03 .anydesk
+ 26084648 drwxr-xr-x  1000   1000      4096 14-Mar-2019 18:33 .gphoto
+ 26085362 drwxr-xr-x  1000   1000      4096 19-Mar-2019 11:30 first-app
+ 26878799 drwxrwxr-x  1000   1000      4096 19-Mar-2019 13:11 DMS_1
+ 26084086 drwxr-xr-x  1000   1000      4096 15-Apr-2019 15:30 swagger-doc
+ 25302229 drwx------  1000   1000      4096 25-Jan-2019 10:23 .thunderbird
+ 25203718 -rw-------  1000   1000        70 25-Jan-2019 16:09 .npmrc
+ 27930577 drwxrwxr-x  1000   1000      4096 12-Jun-2019 15:23 .Genymobile
+ 25204172 -rw-rw-r--  1000   1000       172 25-Jun-2019 15:18 .wget-hsts
+ 26216027 drwxr-xr-x  1000   1000      4096 26-Jun-2019 16:23 my-workspace
+ 26745331 drwxr-xr-x  1000   1000      4096 15-Apr-2019 15:37 swagger-docs-tutorial
+ 25196752 -rw-r--r--  1000   1000     11544  4-Mar-2019 13:00 nodesource_setup.sh
+ 26089896 drwxr-xr-x  1000   1000      4096  4-Mar-2019 13:05 .pm2
+ 27671493 drwxr-xr-x  1000   1000      4096 15-Apr-2019 15:39 rest-swagger-example
+ 25172701 -rw-rw-r--  1000   1000      4397 15-Apr-2019 15:40 .v8flags.6.8.275.32-node.45.ba47bf2e70b581a72701f47c5957e233.json
+ 25172895 -rw-rw-r--  1000   1000   1062000 15-Apr-2019 17:40 .babel.json
+ 27270315 drwxr-xr-x  1000   1000      4096 10-May-2019 18:32 TEST
+ 25175863 -rw-------  1000   1000         0  6-May-2019 16:18 .node_repl_history
+ 26214574 drwxrwxr-x  1000   1000      4096  7-May-2019 11:22 .azuredatastudio
+ 26478530 drwxrwxr-x  1000   1000      4096  7-May-2019 11:22 .sqlsecrets
+ 25300185 drwx------     0      0      4096 11-May-2019 16:23 .dbus
+ 25173883 -rw-rw-r--  1000   1000       131 14-May-2019 19:10 .xinputrc
+ 25178838 -rw-rw-r--  1000   1000   1971829  1-Jun-2019 19:01 ritwickdey.LiveServer-unresponsive.cpuprofile.txt
+ 25303982 drwxr-xr-x  1000   1000      4096 10-Jun-2019 13:01 node-rest-shop
+ 25172406 -rw-------  1000   1000    503373 26-Jun-2019 17:43 .xsession-errors
+ 25198699 -rw-r--r--  1000   1000   3658570  9-Nov-2018 21:59 anydesk_4.0.1-1_amd64.deb
+ 25174891 -rw-------  1000   1000        58 26-Jun-2019 17:42 .Xauthority
+ 25195255 -rw-r--r--  1000   1000   3658570  9-Nov-2018 21:59 anydesk_4.0.1-1_amd64.deb.1
+ 25183384 -rw-r--r--  1000   1000  13489636  6-Jun-2019 13:20 teamviewer_amd64.deb
+ 25183354 -rwxr-----  1000   1000     13337 26-Jun-2019 16:12 AngularTest.docx
+ 25183461 -rw-r--r--  1000   1000        82 26-Jun-2019 16:15 .~lock.AngularTest.docx#
+ 25306934 drwxr-xr-x  1000   1000      4096 26-Jun-2019 16:16 testA
+X25170192 -rw-------  1000   1000     29650 26-Jun-2019 18:02 .ICEauthority-c
+X25170192 -rw-------  1000   1000     29650 26-Jun-2019 18:02 .ICEauthority-l
+X25174891 -rw-------  1000   1000        58 26-Jun-2019 17:42 .Xauthority-n
+Directory /home
+ 25165825 drwxr-xr-x     0      0      4096 17-Jan-2019 11:04 .
+       2 drwxr-xr-x     0      0      4096 26-Jun-2019 06:50 ..
+ 25165826 drwxr-xr-x  1000   1000      4096 26-Jun-2019 17:43 melayer
+Directory /
+       2 drwxr-xr-x     0      0      4096 26-Jun-2019 06:50 .
+       2 drwxr-xr-x     0      0      4096 26-Jun-2019 06:50 ..
+      11 drwx------     0      0     16384 17-Jan-2019 11:02 lost+found
+      12 -rw-------     0      0 2147483648 17-Jan-2019 11:02 swapfile
+ 11010049 drwxr-xr-x     0      0     12288 26-Jun-2019 06:52 etc
+ 9437185 drwxr-xr-x     0      0      4096 17-Jan-2019 12:13 media
+ 17039361 drwxr-xr-x     0      0      4096 25-Jul-2018 08:44 var
+ 16908289 drwxr-xr-x     0      0      4096 12-Jun-2019 15:23 bin
+ 25427969 drwxr-xr-x     0      0      4096 26-Jun-2019 06:51 boot
+ 6029313 drwxr-xr-x     0      0      4096 25-Jul-2018 08:33 dev
+ 25165825 drwxr-xr-x     0      0      4096 17-Jan-2019 11:04 home
+ 17694721 drwxr-xr-x     0      0      4096 14-May-2019 12:30 lib
+ 12582913 drwxr-xr-x     0      0      4096 14-May-2019 11:55 lib64
+ 10092545 drwxr-xr-x     0      0      4096 25-Jul-2018 08:33 mnt
+ 6160385 drwxr-xr-x     0      0      4096 25-Jun-2019 15:20 opt
+ 8257537 drwxr-xr-x     0      0      4096 24-Apr-2018 14:04 proc
+ 4456449 drwx------     0      0      4096 10-Jun-2019 16:00 root
+ 27394049 drwxr-xr-x     0      0      4096 25-Jul-2018 08:42 run
+ 22282241 drwxr-xr-x     0      0     12288 18-Jun-2019 18:14 sbin
+ 1835009 drwxr-xr-x     0      0      4096 14-May-2019 13:45 snap
+ 13238273 drwxr-xr-x     0      0      4096 25-Jul-2018 08:33 srv
+ 9043969 drwxr-xr-x     0      0      4096 24-Apr-2018 14:04 sys
+ 28573697 drwxrwxrwt     0      0     12288 26-Jun-2019 18:32 tmp
+ 14548993 drwxr-xr-x     0      0      4096 11-May-2019 17:05 usr
+      14 lrwxrwxrwx     0      0        29 26-Jun-2019 06:50 vmlinuz
+      16 lrwxrwxrwx     0      0        32 26-Jun-2019 06:50 initrd.img.old
+      17 lrwxrwxrwx     0      0        32 26-Jun-2019 06:50 initrd.img
+  262145 drwxrwxr-x     0      0      4096 17-Jan-2019 11:04 cdrom
+X     17 lrwxrwxrwx     0      0        32 26-Jun-2019 06:50 initrd.img.512610
+      18 lrwxrwxrwx     0      0        29 26-Jun-2019 06:50 vmlinuz.old
+X     16 lrwxrwxrwx     0      0        32 26-Jun-2019 06:50 initrd.img.old.672595
+
+TestDisk exited normally.

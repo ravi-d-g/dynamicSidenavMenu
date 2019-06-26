@@ -1,32 +1,40 @@
-<app-navbar (sideClick)="onToolbarMenuToggle()" (userLogOut)="logout($event)" [mainMenuList]='navbarItems'>
-</app-navbar>
-<mat-sidenav-container id="sidenavContainer" fullscreen>
-  <mat-sidenav mode="side" #sidenav id="sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened>
-    <div>
-      <mat-card class="pb-2 pt-1" style="    box-shadow: none;
-      border-bottom: 1px solid #e6e6e6;
-      border-radius: 0;">
-        <mat-card-header>
-          <div mat-card-avatar class="avatar"></div>
-          <mat-card-title>John Doe</mat-card-title>
-          <mat-card-subtitle class="mb-0"> Internal</mat-card-subtitle>
-        </mat-card-header>
-      </mat-card>
-      <mat-list id="menus" class="pt-0" class="side-nav-menu">
-
-        <mat-nav-list>
-          <app-menu-list-item class="bottomBorder" *ngFor="let item of navItems | slice:0:20;" [item]="item"
-            (clickCloseMenu)="onToolbarMenuToggle()" [closeAllSubMenu]="closeMenu"
-            (clickOpenMenu)="onToolbarMenuOpen()"></app-menu-list-item>
-        </mat-nav-list>
-      </mat-list>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 pt-3">
+      <h5 class="text-center"> All Post List </h5>
+      <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+        <div *cdkVirtualFor="let item of itemsList" class="example-item card mt-3">
+          <div class=" ">
+            <div class="card-body">
+              <h5 class="card-title"> {{item.id}} {{item.title}}</h5>
+              <a class="btn btn-primary" (click)="getDetails(item.id)">Go Details</a>
+            </div>
+          </div>
+        </div>
+      </cdk-virtual-scroll-viewport>
     </div>
-  </mat-sidenav>
-  <mat-sidenav-content [ngStyle]="{ 'margin-left.px': contentMargin }"
-    [ngClass]="{'isOpen':isMenuOpen, 'isClose':!isMenuOpen} ">
+    <div class="col-lg-6 pt-3">
+      <h5 class="text-center"> Add New Post </h5>
 
-    <div class="container">
-      <router-outlet></router-outlet>
+      <div class="card mt-3 ">
+        <div class="card-body">
+          <h5 class="card-title"> Add New Post </h5>
+          <a class="btn btn-primary" (click)="openDialog()">Click To Add Post</a>
+        </div>
+      </div>
+
+      <div class="pt-3" *ngIf=itemDetails>
+        <h5 class="text-center"> Post Details </h5>
+        <div class="card mt-3 ">
+          <div class="card-body">
+            <h5 class="card-title"> {{itemDetails.id}} {{itemDetails.title}}</h5>
+            <p class="card-text">
+              {{itemDetails.body}}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+  </div>
+</div>
+<!-- <router-outlet></router-outlet> -->

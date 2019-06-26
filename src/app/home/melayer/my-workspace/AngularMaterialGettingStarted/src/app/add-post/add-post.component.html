@@ -1,0 +1,50 @@
+<div class="card" cdkFocusInitial>
+  <div class="card-header">
+    <h5> Add New Post</h5>
+  </div>
+  <div class="card-body">
+    <form [formGroup]="addPostForm" *ngIf="!respData">
+      <div class="input-group mb-2 mr-sm-2">
+        <input type="text" class="form-control" placeholder="UserId" formControlName="userId" required>
+      </div>
+      <div class="error-msg">
+        <span *ngIf="(addPostForm.get('userId').dirty || addPostForm.get('userId').touched)
+          && addPostForm.get('userId').hasError('required')" class="text-danger">
+          User Id is required
+        </span>
+
+      </div>
+
+      <div class="input-group mb-2 mr-sm-2">
+        <input type="text" class="form-control" placeholder="postTitle" formControlName="postTitle" required>
+
+      </div>
+      <div class="error-msg">
+        <span *ngIf="( addPostForm.get('postTitle').dirty || addPostForm.get('postTitle').touched )&&
+         addPostForm.get('postTitle').hasError('required')" class="text-danger">
+          Post Title is required </span>
+      </div>
+      <div class="input-group mb-2 mr-sm-2">
+        <input type="text" class="form-control" placeholder="postBody" formControlName="postBody" required>
+
+      </div>
+      <div class="error-msg">
+        <span *ngIf="( addPostForm.get('postBody').dirty || addPostForm.get('postBody').touched )
+        && addPostForm.get('postBody').hasError('required') " class="text-danger">
+          Post Body is required </span>
+      </div>
+    </form>
+
+    <div *ngIf="respData">
+      {{respData|json}}
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="form-group text-right">
+      <button type="button" class="btn btn-primary  " (click)="savePost()" *ngIf="!respData">Save Post</button>
+      <button type="button" class="btn btn-secondary  " (click)="onNoClick()">Cancel</button>
+
+    </div>
+
+  </div>
+</div>
